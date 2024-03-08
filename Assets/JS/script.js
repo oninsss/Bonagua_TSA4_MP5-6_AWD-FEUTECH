@@ -89,7 +89,7 @@ card1.addEventListener('mouseover', () => {
     foodName2.innerText = "순두부찌개";        
     
     if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card1Pos.left - 285}px`;
+        hoverDesign.style.left = `${card1Pos.left - 295}px`;
         hoverDesign.style.top = `${card1Pos.top - 35}px`;
     } else if (window.screen.width > 1024 && window.screen.width < 1441){
         hoverDesign.style.left = `${card1Pos.left - 65}px`;
@@ -125,7 +125,7 @@ card2.addEventListener('mouseover', () => {
     foodName2.innerText = "떡볶이";
 
     if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card2Pos.left - 285}px`;
+        hoverDesign.style.left = `${card2Pos.left - 295}px`;
         hoverDesign.style.top = `${card2Pos.top - 35}px`;
     } else if (window.screen.width > 1024 && window.screen.width < 1441) {
         hoverDesign.style.left = `${card2Pos.left - 65}px`;
@@ -160,7 +160,7 @@ card3.addEventListener('mouseover', () => {
     foodName2.innerText = "비빔밥";
 
     if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card3Pos.left - 285}px`;
+        hoverDesign.style.left = `${card3Pos.left - 295}px`;
         hoverDesign.style.top = `${card3Pos.top - 35}px`;
     } else if (window.screen.width > 1024 && window.screen.width < 1441) {
         hoverDesign.style.left = `${card3Pos.left - 65}px`;
@@ -196,7 +196,7 @@ card4.addEventListener('mouseover', () => {
     foodName2.innerText = "자장면";
 
     if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card4Pos.left - 285}px`;
+        hoverDesign.style.left = `${card4Pos.left - 295}px`;
         hoverDesign.style.top = `${card4Pos.top - 35}px`;
     } else if (window.screen.width > 1024 && window.screen.width < 1441){
         hoverDesign.style.left = `${card4Pos.left - 65}px`;
