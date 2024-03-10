@@ -44,6 +44,17 @@ function mainMenuCloser(){
 
 }
 
+function hoverRemove() {
+    if (pastBowl == 1) {
+        card1.style.backgroundColor = "transparent";
+    } else if (pastBowl == 2) {
+        card2.style.backgroundColor = "transparent";
+    } else if (pastBowl == 3) {
+        card3.style.backgroundColor = "transparent";
+    } else if (pastBowl == 4) {
+        card4.style.backgroundColor = "transparent";
+    }
+}
 
 function fadeOut() {
     foodName.style.opacity = 0;
@@ -72,15 +83,7 @@ function prevCard() {
         card3.style.backgroundColor = "white";
     }
 
-    if (pastBowl == 1) {
-        card1.style.backgroundColor = "transparent";
-    } else if (pastBowl == 2) {
-        card2.style.backgroundColor = "transparent";
-    } else if (pastBowl == 3) {
-        card3.style.backgroundColor = "transparent";
-    } else if (pastBowl == 4) {
-        card4.style.backgroundColor = "transparent";
-    }
+    hoverRemove();
 }
 
 function nextCard(){
@@ -104,21 +107,14 @@ function nextCard(){
         card1.style.backgroundColor = "white";
     }
 
-    if (pastBowl == 1) {
-        card1.style.backgroundColor = "transparent";
-    } else if (pastBowl == 2) {
-        card2.style.backgroundColor = "transparent";
-    } else if (pastBowl == 3) {
-        card3.style.backgroundColor = "transparent";
-    } else if (pastBowl == 4) {
-        card4.style.backgroundColor = "transparent";
-    }
+    hoverRemove();
 }
 
 card1.addEventListener('mouseover', () => {
     gotoBowl = 1;
     transiLength = Math.abs(gotoBowl - currBowl);
     foodBowlsImg.style.transitionDuration = `${transiLength}s`;
+    
     
     if (window.screen.width < 1025) {
         foodBowlsImg.style.transform = `rotate(${card1BowlPos + 10}deg)`;
@@ -134,12 +130,16 @@ card1.addEventListener('mouseover', () => {
     
     pastBowl = currBowl;
     currBowl = gotoBowl;
+    
+    hoverRemove();
+    card1.style.backgroundColor = "white";
 });
 
 card2.addEventListener('mouseover', () => {
     gotoBowl = 2;
     transiLength = Math.abs(gotoBowl - currBowl);
     foodBowlsImg.style.transitionDuration = `${transiLength}s`;
+    
 
     if (window.screen.width < 1025) {
         foodBowlsImg.style.transform = `rotate(${card2BowlPos + 10}deg)`;
@@ -155,12 +155,16 @@ card2.addEventListener('mouseover', () => {
 
     pastBowl = currBowl;
     currBowl = gotoBowl;
+    
+    hoverRemove();
+    card2.style.backgroundColor = "white";
 });
 
 card3.addEventListener('mouseover', () => {
     gotoBowl = 3;
     transiLength = Math.abs(gotoBowl - currBowl);
     foodBowlsImg.style.transitionDuration = `${transiLength}s`;
+    
 
     if (window.screen.width < 1025) {
         foodBowlsImg.style.transform = `rotate(${card3BowlPos + 10}deg)`;
@@ -176,13 +180,16 @@ card3.addEventListener('mouseover', () => {
 
     pastBowl = currBowl;
     currBowl = gotoBowl;
+    
+    hoverRemove();
+    card3.style.backgroundColor = "white";
 });
 
 card4.addEventListener('mouseover', () => {
     gotoBowl = 4;
     transiLength = Math.abs(gotoBowl - currBowl);
     foodBowlsImg.style.transitionDuration = `${transiLength}s`;
-
+    
     if (window.screen.width < 1025) {
         foodBowlsImg.style.transform = `rotate(${card4BowlPos + 10}deg)`;
     }
@@ -198,6 +205,10 @@ card4.addEventListener('mouseover', () => {
     
     pastBowl = currBowl;
     currBowl = gotoBowl;
+    
+
+    hoverRemove();
+    card4.style.backgroundColor = "white";
 });
 
 prevBtn.addEventListener('click', () => {
