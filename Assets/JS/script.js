@@ -88,19 +88,7 @@ card1.addEventListener('mouseover', () => {
     foodName1.innerText = "Spicy Soft Tofu";
     foodName2.innerText = "순두부찌개";        
     
-    if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card1Pos.left - 295}px`;
-        hoverDesign.style.top = `${card1Pos.top - 35}px`;
-    } else if (window.screen.width > 1024 && window.screen.width < 1441){
-        hoverDesign.style.left = `${card1Pos.left - 65}px`;
-        hoverDesign.style.top = `${card1Pos.top - 35}px`;
-    } else if (window.screen.width < 1025 && window.screen.width > 768){
-        hoverDesign.style.left = `${card1Pos.left - 40}px`;
-        hoverDesign.style.top = `${card1Pos.top - 35}px`;
-    } else if (window.screen.width < 769 && window.screen.width > 425){
-        hoverDesign.style.left = `${card1Pos.left - 53}px`;
-        hoverDesign.style.top = `${card1Pos.top - 30}px`;
-    }
+
     
     hoverDesign.style.transitionDuration = `${transiLength}s`;
 
@@ -124,21 +112,6 @@ card2.addEventListener('mouseover', () => {
     foodName1.innerText = "Spicy Tteokbokki";
     foodName2.innerText = "떡볶이";
 
-    if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card2Pos.left - 295}px`;
-        hoverDesign.style.top = `${card2Pos.top - 35}px`;
-    } else if (window.screen.width > 1024 && window.screen.width < 1441) {
-        hoverDesign.style.left = `${card2Pos.left - 65}px`;
-        hoverDesign.style.top = `${card2Pos.top - 35}px`;
-    } else if (window.screen.width < 1025 && window.screen.width > 768){
-        hoverDesign.style.left = `${card2Pos.left - 40}px`;
-        hoverDesign.style.top = `${card2Pos.top - 35}px`;
-    }else if (window.screen.width < 769 && window.screen.width > 425){
-        hoverDesign.style.left = `${card2Pos.left - 53}px`;
-        hoverDesign.style.top = `${card2Pos.top - 30}px`;
-    }
-    hoverDesign.style.transitionDuration = `${transiLength}s`;
-
     currBowl = gotoBowl;
 });
 
@@ -158,21 +131,6 @@ card3.addEventListener('mouseover', () => {
     foodName1.style.fontWeight = "200";
     foodName1.innerText = "Bibimbap";
     foodName2.innerText = "비빔밥";
-
-    if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card3Pos.left - 295}px`;
-        hoverDesign.style.top = `${card3Pos.top - 35}px`;
-    } else if (window.screen.width > 1024 && window.screen.width < 1441) {
-        hoverDesign.style.left = `${card3Pos.left - 65}px`;
-        hoverDesign.style.top = `${card3Pos.top - 35}px`;
-    } else if (window.screen.width < 1025 && window.screen.width > 768){
-        hoverDesign.style.left = `${card3Pos.left - 40}px`;
-        hoverDesign.style.top = `${card3Pos.top - 35}px`;
-    }else if (window.screen.width < 769 && window.screen.width > 425){
-        hoverDesign.style.left = `${card3Pos.left - 53}px`;
-        hoverDesign.style.top = `${card3Pos.top - 30}px`;
-    } 
-    hoverDesign.style.transitionDuration = `${transiLength}s`;
 
     currBowl = gotoBowl;
 });
@@ -194,21 +152,6 @@ card4.addEventListener('mouseover', () => {
     foodName1.style.fontWeight = "200";
     foodName1.innerText = "Jajangmyeon";
     foodName2.innerText = "자장면";
-
-    if (window.screen.width > 1440){
-        hoverDesign.style.left = `${card4Pos.left - 295}px`;
-        hoverDesign.style.top = `${card4Pos.top - 35}px`;
-    } else if (window.screen.width > 1024 && window.screen.width < 1441){
-        hoverDesign.style.left = `${card4Pos.left - 65}px`;
-        hoverDesign.style.top = `${card4Pos.top - 35}px`;
-    } else if (window.screen.width < 1025 && window.screen.width > 768){
-        hoverDesign.style.left = `${card4Pos.left - 40}px`;
-        hoverDesign.style.top = `${card4Pos.top - 35}px`;
-    }else if (window.screen.width < 769 && window.screen.width > 425){
-        hoverDesign.style.left = `${card4Pos.left - 53}px`;
-        hoverDesign.style.top = `${card4Pos.top - 30}px`;
-    }
-    hoverDesign.style.transitionDuration = `${transiLength}s`;
     
 
     currBowl = gotoBowl;
@@ -257,4 +200,3 @@ card4.addEventListener('click', () => {
         foodDescription4.style.zIndex = -1;
     });
 });
-
