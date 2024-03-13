@@ -265,19 +265,20 @@ body{
 
 @media (max-width: 1440px){
     .container{
-        max-width: 800px;
 
         .foodBowls{
             img{
-                top: -145%;
-                left: -65%;
+                width: 2000px;
+                top: -120%;
+                left: -57%;
                 transform: rotate(-10);
             }
+            
         }
 
         .eachBowl{
             bottom: 15%;
-            left: -35%;
+            left: calc(100vw * 0.35%);
         }
 
         .foodName{
@@ -307,12 +308,12 @@ body{
     }
 }
 
-@media (max-width: 1440px) and (max-height:1080px){
+/* @media (max-width: 1440px) and (max-height:1080px){
     .container{
         .foodBowls{
             img{
-                top: -135%;
-                left: -57%;
+                top: calc(100vh * -1.35%);
+                left: calc(100vw * -0.57%);
                 transform: rotate(-10);
             }
         }
@@ -326,13 +327,13 @@ body{
         }
         
     }
-}
+} */
 
 @media (max-width: 1024px){
     .container{
         .foodBowls{
             img{
-                top: -135%;
+                top: -125%;
                 left: -48%;
                 transform: rotate(0deg);
             }
@@ -370,8 +371,8 @@ body{
     .container{
         .foodBowls{
             img{
-                top: -130%;
-                left: -75%;
+                top: calc(100vh * -1.28);
+                left: calc(100vw * -0.85);
                 transform: rotate(0deg);
             }
         }
@@ -424,9 +425,9 @@ body{
     .container{
         .foodBowls{
             img{
-                width: 1500px;
-                top: -70%;
-                left: -85%;
+                width: 1250px;
+                top: calc(100vh * -0.7);
+                left: calc(100vw * -0.90);
                 transform: rotate(0deg);
             }
         }
